@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Steam Web</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <meta name="keywords" content="web site, html tutorials, usege of html metatags" />
+    <meta name="description" content="A web site resource for those willing to learn HTML and webmasters" />
+
+</head>
+<body>
+    <div class="header__open" id="header__open"></div>
+<header id="header">
+    <div class="header" id="header">
+        <div class="logo">
+            <img src="assets/media/LOGO SEM FUNDO-02.png" class="logo_img">
+        </div>
+        <div class="menu">
+            <!--<img class="menu-opener" src="assets/images/menu.png" />-->
+            <nav>
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">Quem somos</a></li>
+                    <li><a href="">Nossos serviços</a></li>
+                    <li><a href="">Nossos projetos</a></li>
+                    <li><a href="">Valores</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main onwheel=" esconder()" >
+    
+    <section class="banner" id="banner" onwheel="rolarChoose(event)">
+        <div class="video">
+           <!--<video controls autoplay muted id="autoplay">
+                <source src="assets/media/videos/video.mp4" type="video/mp4">
+            </video> -->
+            <img src="assets/media/fundo1.webp" class="fundo__banner">
+
+        </div>
+        <img src="assets/media/TOPO INOVADOR.png" class="topo__inovador">
+        <img src="assets/media/DESIGN INOVADOR.png" class="meio__inovador">
+        <img src="assets/media/BAIXO INOVADOR.png" class="baixo__inovador">
+        <img src="assets/media/CRIATIVO---TOPO.png" class="topo__criativo">
+        <img src="assets/media/VISUAL-INSPIRADOR.png" class="meio__criativo">
+        <img src="assets/media/CRIATIVO---BAIXO.png" class="baixo__criativo">
+        <img src="assets/media/EXPERIENCIA-----TOPO.png" class="topo__experiencia">
+        <img src="assets/media/ALÉM-DOS-LIMITES.png" class="meio__experiencia">
+        <img src="assets/media/EXPERIENCIA-----BAIXO.png" class="baixo__experiencia">
+    </section>
+    <section class="choose" id="choose"  onwheel="rolarChoose(event)" >
+        <div class="choose__container" id="chooseContainer">
+            <div  class="choose_title">ESCOLHA STEAM</div>
+            <div class="button choose__button">
+                <p class="button__text__1">Transforme Sua Visão em Realidade Digital</p>
+                <p class="button__text__2">Vamos Começar!</p> 
+            </div>
+            <div class="choose_text">
+                <p class="choose__text__1" id="chooseTexto1">
+                    Com a infinidade de opções disponíveis no mercado de criação de sites, a escolha certa para dar vida à sua presença online é crucial.
+                    Aqui na Steam Web, não somos apenas uma empresa de desenvolvimento de sites, somos seus parceiros na construção de uma identidade digital sólida
+                    e impactante. O que nos diferencia é a fusão entre criatividade e tecnologia de ponta, garantindo que seu site não seja apenas visualmente 
+                    deslumbrante, mas também funcional e intuitivo. Nossos especialistas altamente qualificados trabalham em estreita colaboração com você para
+                    entender suas necessidades e transformá-las em um site que não apenas impressionará os visitantes, mas também os envolverá de maneira significativa. 
+                    Se você busca um parceiro confiável e comprometido com o sucesso do seu negócio online, a Steam Web é a escolha que irá superar suas expectativas.
+                    </br><small>1/2</small>
+                </p>
+                <p class="choose__text__2" id="chooseTexto2">
+                Na Steam Web, não acreditamos em abordagens genéricas. Cada projeto que assumimos é único, merecendo uma abordagem sob medida. 
+                Nossa dedicação à excelência reflete-se em cada pixel e linha de código que escrevemos. Desde a estética visual até a funcionalidade
+                perfeita em dispositivos móveis e a otimização para mecanismos de busca, nossa equipe cuida de todos os detalhes para garantir que seu
+                site se destaque em um cenário digital competitivo. Escolher a Steam Web significa escolher um design impressionante, usabilidade 
+                impecável e um compromisso inabalável com o sucesso do seu empreendimento online. Deixe-nos ser o catalisador que transforma sua visão
+                 em realidade digital - juntos, construiremos não apenas um site, mas uma experiência memorável que deixará uma marca duradoura nos 
+                 corações e mentes de seus visitantes.
+                </br><small>2/2</small>
+                </p>
+                <div class="pointers">
+                    <div class="pointer__active" onclick="voltaTexto()" id="choosePointer1" ></div>
+                    <div class="pointer__inactive" onclick="mudaTexto()"id="choosePointer2"></div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section class="produtos">
+        
+    </section>
+    <section class="competences" id="competences" onwheel="rolarCompetences(event),  deslizar()">
+        <div class="competences__title" id="competences__title">
+            O QUE USAMOS
+        </div>
+        <div class="competences__text__title" id="competences__text__title">Conheça algumas das principais ferramentas ultilizadas pela<br> Steam Web</div>
+        
+        <div class="competences__box__before" id="competencesBoxBefore"></div>
+        <div class="competences__box" id="competences__box"></div>
+        <div class="competences__box__after" id="competencesBoxAfter" ></div>
+        <div class="competences__text__container">
+            <div class="competences__text__box" id="competences__text__box">
+
+                <div class="competences__container cont1" id="comp_t1" >
+                    <hr class="line" id="lt1">
+                    <div class="competences__text text1" id="tt1">CMS WORDPRESS</div>
+                    <div class="competences__subtext" id="comp_p1" >Desperte seu site para a vida com o poder do WordPress! <br>
+                        Crie uma presença online memorável, personalizada e de alto desempenho que cativa seus visitantes<br> 
+                        desde o primeiro clique com um sistema de gerenciamento de conteúdo (CMS) amplamente utilizado.</div>
+                    <hr class="line" id="lt2">
+                </div>  
+                <div class="competences__container" id="comp_t2">
+                    <div class="competences__text" id="tt2">WOOCOMERCE</div>
+                    <div class="competences__subtext" id="comp_p2" >Transforme sua visão de negócios em realidade com o WooCommerce! </br>
+                        Aproveite o poder desta incrível extensão de comércio eletrônico, integrada ao seu site WordPress, </br>para criar uma loja online cativante. </br>
+                        </div>
+                    <hr class="line" id="lt3">
+                </div>    
+                <div class="competences__container" id="comp_t3" >
+                    <div class="competences__text" id="tt3">LINGUAGENS DE PROGRAMAÇÃO</div>
+                    <div class="competences__subtext" id="comp_p3" >Construa a presença online dos seus sonhos com HTML5, CSS3 e Javascript!<br>
+                         Aplique o poder do HTML5 e PHP para estruturar seu site, o estilo marcante do CSS3 para um visual <br>inesquecível
+                          e a magia do Javascript para interações envolventes.<br> Crie uma experiência única que conquista e retém os visitantes,
+                           dando vida à sua visão de forma espetacular.</div>
+                    <hr class="line" id="lt4">
+                </div>  
+                <div class="competences__container" id="comp_t4" >
+                    <div class="competences__text" id="tt4">BOOTSTRAP</div>
+                    <div class="competences__subtext" id="comp_p4" >
+                         Este poderoso framework oferece um design moderno e responsivo.<br> Crie uma experiência única para seus visitantes. <br>
+                         Deixe sua marca brilhar com layouts impressionantes e elementos interativos.</div>
+                    <hr class="line" id="lt5">
+                </div>  
+                <div class="competences__container" id="comp_t5" >
+                    <div class="competences__text" id="tt5">UI / UX DESIGN</div>
+                    <div class="competences__subtext" id="comp_p5" >Transforme ideias em experiências incríveis com UX e UI Design! <br>
+                        Use o poder do Figma e Adobe XD para criar interfaces visualmente deslumbrantes e intuitivas, <br>conquistando corações desde o primeiro clique.</div>
+                    <hr class="line" id="lt6">
+                </div>  
+                <div class="competences__container" id="comp_t6" >
+                    <div class="competences__text" id="tt6">ANIMAÇÃO GSAP</div>
+                    <div class="competences__subtext" id="comp_p6" >Crie magia digital com o animações personalizadas e com GSAP! <br>
+                         Esta poderosa biblioteca de animação traz vida ao seu site com movimentos suaves e interativos<br> que cativam seus visitantes</div>
+                    <hr class="line" id="lt7">
+                </div>  
+            </div>    
+            
+
+
+        </div>
+    </section>
+    <section class="letterbox" id="letterbox" onwheel="rolarLetterbox(event)">
+        <marquee direction="left" scrollamount="12" class="letreiro">
+            SITES PERFEITOS ---- ANIMAÇÕES INOVADORAS ---- MELHOR DESIGN ---- VALORES ACESSIVEIS
+        </marquee>
+        <marquee direction="right" scrollamount="12" class="letreiro">
+            SITES PERFEITOS ---- ANIMAÇÕES INOVADORAS ---- MELHOR DESIGN ---- VALORES ACESSIVEIS
+        </marquee>
+    </section>
+    <section class="how_we_do" id="howWeDo" onwheel="rolarHowWeDo(event)">
+        <div class="how_we_do_container" id="howDoWeDoCont">
+            <div class="fundo__how1" id="fundoHow1">
+                <div class="how_we_do__title" id="howWeDoTitle">POR DENTRO DA STEAM </div>
+                <div class="how1" id="how1">
+                    
+                    <img src="assets/media/raio1.png" class="raio raio1" id="raio1">
+                    <img src="assets/media/raio2.png" class="raio raio2" id="raio2">
+                    <img src="assets/media/raio3.png" class="raio raio3" id="raio3">
+                    <img src="assets/media/raio4.png" class="raio raio4" id="raio4">
+                    <img src="assets/media/aro__raio.png" class="raio aro__raio" id="raioaro">
+                    <img src="assets/media/aro__raio.png" class="raio aro__raio1" id="raioaro1">
+                    <div class="howdowedo__bball__front">
+                        <img src="assets/media/ENGRENAGEM-03-02.png" class="howdowedo__front__img" id="howdowedo__ball" alt="">
+                    </div>
+                </div>
+                    <div class="how_we_do__box">
+                        <div class="how_we_do__in  ball1 ball__none" id="b1"> <img src="/assets/media/ballBriefingText.png" alt="briefing" class="ball__img"></div>
+                        <div class="how_we_do__in  ball2 ball__none" id="b2"> <img src="/assets/media/ballSEOText.png" alt="SEO" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball3 ball__none" id="b3"> <img src="/assets/media/balLPlanejamentoText.png" alt="planejamento" class="ball__img"></div>
+                        <div class="how_we_do__in  ball4 ball__none" id="b4"> <img src="/assets/media/balLMockupText.png" alt="briefing" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball5 ball__none" id="b5"> <img src="/assets/media/ballFerramentasText.png" alt="briefing" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball6 ball__none" id="b6"> <img src="/assets/media/ballDesenvolvimentoText.png" alt="briefing" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball7 ball__none" id="b7"> <img src="/assets/media/balLConteudoText.png" alt="briefing" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball8 ball__none" id="b8"> <img src="/assets/media/ballConfiguraçãoText.png" alt="briefing" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball9 ball__none" id="b9"> <img src="/assets/media/balLTesteText.png" alt="briefing" class="ball__img"> </div>
+                        <div class="how_we_do__in  ball10 ball__none" id="b10"> <img src="/assets/media/ballLancamentoText.png" alt="briefing" class="ball__img"> </div>
+
+                        <div class="how_we_do__information ball__none" id="howInf">
+                            <div class="inf01  how__inf" id="inf01">1. BRIEFING <br><br>
+                                <p>Deixe sua visão tomar forma! <br>Com um briefing detalhado, transformamos suas ideias em um site cativante e funcional.
+                                Juntos criaremos uma presença online que se destaque e conquiste seu público."</p>
+                            </div>
+                            <div class="inf02  how__inf" id="inf02">2. PLANEJAMENTO DO SEO <br><br>
+                                <p>SEO: O caminho para alcançar o topo das buscas online. Nessa etapa planejaremos e traçaremos a rota para que seu site conquiste visibilidade na web com estratégias robustas</p>
+                            </div>
+                            <div class="inf03  how__inf" id="inf03">3. PLANEJAMENTO DO SITE <br><br>
+                                <p>O segredo do sucesso online: Nessa etapa planejamos um site sólido conforme a sua visão. Trace o caminho para uma presença digital eficaz e envolvente.</p>
+                            </div>
+                            <div class="inf04  how__inf" id="inf04">4. MOCKUP <br><br>
+                                <p>Mockups: O alicerce visual para um site perfeito. Dê vida à sua visão digital antes do desenvolvimento. Nessa fase criaremos um protótipo do site dos seus sonhos.</p> 
+                            </div>
+                            <div class="inf05  how__inf" id="inf05">5. DEFINIÇÃO DAS FERRAMENTAS <br><br>
+                                <p>Em um mundo de opções, a seleção da ferramenta certa é tão crucial quanto a sua implementação. Nesta fase, escolheremos cuidadosamente as melhores ferramentas para moldar o seu site.</p>
+                            </div>
+                            <div class="inf06  how__inf" id="inf06">6. DESENVOLVIMENTO E CODIFICAÇÃO <br><br>
+                                <p>Desenvolvimento é a criação do futuro, codificação é a linguagem que o define. Nessa fase nós iremos desenvolver e codificar seu site com o uso das ferramentas e planejamentos feitos.</p>
+                            </div>
+                            <div class="inf07  how__inf" id="inf07">7. CRIAÇÃO DE CONTEÚDO  <br><br>
+                                <p>Nessa fase nós criaremos um conteúdo envolvente para cativar seu público. Sua história ganhará vida no mundo digital através das palavras, imagens e vídeos.</p>
+                            </div>
+                            <div class="inf08  how__inf" id="inf08">8. CONFIGURAÇÃO DO SEO <br><br>
+                                <p>Otimizar o SEO é trazer sua marca para o centro do palco online. Nessa fase efetuaremos configurações cuidadosas, com o foco em aumentar a visibilidade, atrair tráfego e conquista ao seu site.</p>
+                            </div>
+                            <div class="inf09  how__inf" id="inf09">9. TESTE E REVISÃO <br><br>
+                                <p>Um teste minucioso e uma revisão atenta garantem um lançamento perfeito. Nessa fase eliminaremos erros e aprimoraremos a usabilidade assegurando que seu site impressione desde o primeiro acesso.</p></div>
+                            <div class="inf10  how__inf" id="inf10">10. LANÇAMENTO <br><br>
+                                <p>O grande momento chegou: lançar seu site para o mundo! Com entusiasmo, compartilharemos sua visão online, expanda sua presença e conecte-se com seu público.</p>    
+                            </div>
+                            <div class="saiba__mais" id="saibaMais"> <img class="saiba__mais__img" src="/assets/media/saibaMaisBotão.png"></div>
+                            
+                            
+                        </div>
+                        <div class="popups">
+                            <div class="popup__how popup__how__1" id="popUpFundo" onclick="closePopup(event)"></div>
+                            <div class="popup__iner" id="popUp01">
+                                <img src="assets/media/ballBriefingImage.png" class="img__popup">
+                                <h1 class="popup__title">1. BRIEFING</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                            <div class="popup__iner" id="popUp02">
+                                <img src="assets/media/ballSEOImage.png" class="img__popup">
+                                <h1 class="popup__title">2. PLANEJAMENTO DO SEO</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp03">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp04">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp05">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp06">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp07">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp08">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp09">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                            <div class="popup__iner" id="popUp10">
+                                <img src="assets/media/balLPlanejamentoText.png" class="img__popup">
+                                <h1 class="popup__title">3. PLANEJAMENTO DO SITE</h1>
+                                <p class="popup__text">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                     from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                                     written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                                <div class="button__popup" onclick="closePopup(event)">X</div>
+                            </div>
+                               
+                               
+                           
+                        </div>
+                        
+                     <img src="assets/media/engrenagem__how.png" class="eng__how ball__none" id="howEng">
+                </div>
+            </div>
+            
+        </div>
+   
+        
+    </section>
+    <section class="portifolio" id="portifolio"  onwheel="rolarPortifolio(event)">
+        <div class="portifolio__container">
+            <div class="portifolio__title">Um pouco de nossos trabalhos</div>
+            
+            <span class="modelos" style=" --i:1;" id="modelo1Large">
+                <div class="site__name">NOME DO SITE 1</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo1.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>
+
+            <span class="modelos" style=" --i:2;" id="modelo2Large">
+                <div class="site__name">NOME DO SITE 2</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo2.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>
+
+            <span class="modelos" style=" --i:3;" id="modelo3Large">
+                <div class="site__name">NOME DO SITE 3</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo3.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>
+
+            <span class="modelos" style=" --i:4;" id="modelo4Large">
+                <div class="site__name">NOME DO SITE 4</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo4.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>
+
+            <span class="modelos"style=" --i:5;" id="modelo5Large">
+                <div class="site__name">NOME DO SITE 5</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo5.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>
+
+            <span class="modelos" style=" --i:6;" id="modelo6Large">
+                <div class="site__name">NOME DO SITE 6</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo6.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>    
+
+            <span class="modelos" style=" --i:7;" id="modelo7Large">
+                <div class="site__name">NOME DO SITE 7</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo7.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>
+
+            <span class="modelos" style=" --i:8;" id="modelo8Large">
+                <div class="site__name">NOME DO SITE 8</div>
+                <div class="site__description"> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+                <a class="site__link" href="#">Visitar o site</a>
+                <img src="assets/media/sitemodelo8.jpg">
+                <div class="close__portifolio" onclick="mostraPortifolio(event)">X</div>
+            </span>    
+
+            <div class="box__portifolio" id="boxPortifolio">
+                <span style=" --i:1;" id="modelo1" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo1.jpg"></span>
+                <span style=" --i:2;" id="modelo2" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo2.jpg"></span>
+                <span style=" --i:3;" id="modelo3" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo3.jpg"></span>
+                <span style=" --i:4;" id="modelo4" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo4.jpg"></span>
+                <span style=" --i:5;" id="modelo5" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo5.jpg"></span>
+                <span style=" --i:6;" id="modelo6" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo6.jpg"></span>
+                <span style=" --i:7;" id="modelo7" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo7.jpg"></span>
+                <span style=" --i:8;" id="modelo8" onclick="pausaAnimacao(id)"><img src="assets/media/sitemodelo8.jpg"></span>
+            </div>
+        </div>
+
+        
+    </section>
+    <section class="oquefazemos" id="oQueFazemos" onwheel="rolaroQueFazemos(event)">
+        <div class="oquefazemos__title">O QUE FAZEMOS</div>
+        <div class="oquefazemos__container" onwheel="rolarContainerHorizontal(event)" id="containerHorizontal">
+            <div class="oquefazemos__item sites">SITES</div>
+            <div class="oquefazemos__item ecommerce">E-COMMERCES </div>
+            <div class="oquefazemos__item sistemasOnline">SISTEMAS ONLINE</div>  
+            <div class="oquefazemos__item sistemasOffline">SISTEMAS DE CONTROLE EMPRESARIAL</div> 
+            <div class="oquefazemos__item aplicativos" id="lastItem">WEB APPs</div>
+         </div>
+        
+    </section>
+</section>
+<section class="call">
+</section>    
+    <footer>
+        <div class="footer__left">
+            <div class="footer__logo">STEAM WEB</div>
+            <div class="footer__chamada">Fique a vontade para entrar em contato</div>
+            <div class="footer__email">contato@steamweb.com.br</div>
+        </div>
+        <div class="footer__midle">...</div>
+        <div class="footer__right">...</div>
+    </footer>
+
+</main>
+
+<script type="text/javascript" src="script1.js"></script>
+</body>
+</html>
